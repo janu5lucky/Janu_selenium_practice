@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserinvoKe">
+  <test thread-count="5" name="ChromeDriverInvoke">
+    <classes>
+      <class name="com.test.qa.Invokebrowserandreport">
+	  <methods>
+ 		<include name="InvokeBrowser"/>   
+   	</methods>
+    </class>
+    <class name="com.test.qa.selenium_VWO_APP_Locators">
+		
+      <methods>
+  <include name="Test_VWO_APP_locators"/>   
+    </methods>   
+ </class> 
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
