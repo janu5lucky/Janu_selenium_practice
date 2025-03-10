@@ -99,6 +99,25 @@ public class handling_alerts {
 
 		}
 		
+		@Test()//Priority =1;
+		
+		public void Handling_SimpleAlert_basicSwitch() {
+		
+		driver.get("https://testautomationpractice.blogspot.com/");
+		WebElement simplealert = driver.findElement(By.xpath("//button[@id=\"alertBtn\"]"));
+		
+		simplealert.click();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		
+		driver.switchTo().alert().accept();
+	//	driver.accept();
+		
+		System.out.println("Handling_SimpleAlert-with basic switch--Executed");
+		
+		}
+		
 		
 		@AfterTest()
 		public void Close_browser(){

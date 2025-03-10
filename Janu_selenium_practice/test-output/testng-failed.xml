@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.Assert_handling">
+      <class name="com.test.qa.WebTable_handling_01">
         <methods>
           <include name="Close_Browser"/>
-          <include name="OpenBrowser"/>
-          <include name="Handling_Assertions_hard"/>
+          <include name="handling_webtable1"/>
+          <include name="Open_Browser"/>
         </methods>
-      </class> <!-- com.test.qa.Assert_handling -->
+      </class> <!-- com.test.qa.WebTable_handling_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

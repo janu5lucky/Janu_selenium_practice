@@ -5,9 +5,9 @@
     <classes>
       <class name="com.test.qa.handling_alerts">
 	  <methods>
- 		<include name="Handling_SimpleAlert"/>   
+ 		<exclude name="Handling_SimpleAlert"/>   
  		<include name="Handling_SimpleAlert_withEplicitWait"/>  
- 		<exclude name="Handling_SimpleAlert_WithJSExecutor"/>
+ 		<include name="Handling_SimpleAlert_WithJSExecutor"/>
    	</methods>
     </class>
     </classes>
