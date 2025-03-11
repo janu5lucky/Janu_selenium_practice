@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HandlingAlerts">
+  <test name="Testing_how_to_handle_alerts">
+    <classes>
+      <class name="com.test.qa.handling_alerts">
+	  <methods>
+ 		<exclude name="Handling_SimpleAlert"/>   
+ 		<include name="Handling_SimpleAlert_withEplicitWait"/>  
+ 		<include name="Handling_SimpleAlert_WithJSExecutor"/>
+   	</methods>
+    </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
