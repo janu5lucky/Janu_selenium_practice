@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HandlingAlerts">
+<parameter name ="browserName" value="chrome"/>
+<!-- <parameter name ="username" value="Admin"/> -->
+<!--<parameter name ="password" value="admoin"/>  -->
+<parameter name ="url" value="https://ui.vision/demo/webtest/frames/"/>
+  <test name="Testing_how_to_handle_Iframes">
+    <classes>
+      <class name="com.test.qa.handling_Iframes">
+	  <methods>
+ 		<exclude name="Handling_SimpleAlert"/>   
+ 		<include name="handling_Iframe_with_SwitchTo"/>  
+ 		<include name="Handling_SimpleAlert_WithJSExecutor"/>
+   	</methods>
+    </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

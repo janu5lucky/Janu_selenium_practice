@@ -33,7 +33,7 @@ public class handling_alerts {
 		
 		}
 		
-		@Test()//Priority =1;
+		@Test(priority = 1)//Priority =1;
 		
 		public void Handling_SimpleAlert() {
 		

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.WebTable_handling_01">
+      <class name="com.test.qa.handling_Iframes">
         <methods>
-          <include name="Close_Browser"/>
-          <include name="handling_webtable1"/>
-          <include name="Open_Browser"/>
+          <include name="closeBrowser"/>
+          <include name="handling_Iframe_with_SwitchTo"/>
+          <include name="initializebrowser"/>
+          <include name="handling_Iframe_without_SwitchTo"/>
         </methods>
-      </class> <!-- com.test.qa.WebTable_handling_01 -->
+      </class> <!-- com.test.qa.handling_Iframes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
