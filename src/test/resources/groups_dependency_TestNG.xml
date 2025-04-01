@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Handling_Groups">
+	<test name="Handling Test using groups">
+		<groups>
+			<dependencies>
+				<group name="Sanity" depends-on="Smoke" />
+				<group name="Regression" depends-on="Sanity" />
+
+			</dependencies>
+		</groups>
+		<classes>
+			<class name="com.test.qa.tests.GroupDependency_testNG_ex_02" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

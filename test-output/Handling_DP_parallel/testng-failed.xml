@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Failed suite [Handling_DP_parallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing_parallel_run_with_DataProvider(failed)">
+    <classes>
+      <class name="com.test.qa.Parallel.parallel_with_DP">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="testLogin_parallel" invocation-numbers="1 0 2 3 4"/>
+          <include name="browserOpen"/>
+        </methods>
+      </class> <!-- com.test.qa.Parallel.parallel_with_DP -->
+    </classes>
+  </test> <!-- Testing_parallel_run_with_DataProvider(failed) -->
+</suite> <!-- Failed suite [Handling_DP_parallel] -->

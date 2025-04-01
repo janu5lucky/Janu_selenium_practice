@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Handling_DP_parallel" data-provider-thread-count = "1">
+  <test name="Testing_parallel_run_with_DataProvider">
+    <classes>
+      <class name="com.test.qa.Parallel.parallel_with_DP">
+	  <methods>
+ 		<include name="testLogin_parallel"/>   
+   	</methods>
+    </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
