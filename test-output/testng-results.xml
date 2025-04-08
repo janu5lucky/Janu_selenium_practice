@@ -1,141 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-29T03:28:32 IST" name="Default suite" finished-at="2025-03-29T03:29:27 IST" duration-ms="54883">
+  <suite started-at="2025-04-04T22:01:11 IST" name="Prallel Execution" finished-at="2025-04-04T22:01:12 IST" duration-ms="722">
     <groups>
     </groups>
-    <test started-at="2025-03-29T03:28:32 IST" name="Default test" finished-at="2025-03-29T03:29:27 IST" duration-ms="54883">
-      <class name="com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02">
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:28:32 IST" name="browserOpen" finished-at="2025-03-29T03:28:35 IST" duration-ms="2857" status="PASS">
+    <test started-at="2025-04-04T22:01:11 IST" name="Testing_parallel_execution_test1" finished-at="2025-04-04T22:01:12 IST" duration-ms="579">
+      <class name="com.test.qa.Parallel.Test01">
+        <test-method signature="TestMethod01()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:11 IST" name="TestMethod01" finished-at="2025-04-04T22:01:11 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserOpen -->
-        <test-method signature="testLogin_parallel(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:28:35 IST" name="testLogin_parallel" data-provider="logindata" finished-at="2025-03-29T03:29:00 IST" duration-ms="25421" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestMethod01 -->
+        <test-method signature="TestMethod02()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:11 IST" name="TestMethod02" finished-at="2025-04-04T22:01:11 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin_parallel -->
-        <test-method is-config="true" signature="AfterMethod_ScreenShot(org.testng.ITestResult)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:29:00 IST" name="AfterMethod_ScreenShot" finished-at="2025-03-29T03:29:00 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin_parallel status=SUCCESS method=TakeScreeShot_for_failed_cases_Ex_02.testLogin_parallel(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestMethod02 -->
+        <test-method signature="TestMethod03()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod03" finished-at="2025-04-04T22:01:12 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterMethod_ScreenShot -->
-        <test-method signature="testLogin_parallel(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:29:00 IST" name="testLogin_parallel" data-provider="logindata" finished-at="2025-03-29T03:29:26 IST" duration-ms="25975" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin1232]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[normalize-space()='Dashboard']"}
-  (Session info: chrome=134.0.6998.166)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5404885e4ea1051424562dbb8e865064, findElement {using=xpath, value=//h6[normalize-space()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52159/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5404885e4ea1051424562dbb8e865064]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[normalize-space()='Dashboard']"}
-  (Session info: chrome=134.0.6998.166)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5404885e4ea1051424562dbb8e865064, findElement {using=xpath, value=//h6[normalize-space()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52159/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5404885e4ea1051424562dbb8e865064
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02.testLogin_parallel(TakeScreeShot_for_failed_cases_Ex_02.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- TestMethod03 -->
+        <test-method signature="TestMethod04()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod04" finished-at="2025-04-04T22:01:12 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin_parallel -->
-        <test-method is-config="true" signature="AfterMethod_ScreenShot(org.testng.ITestResult)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:29:26 IST" name="AfterMethod_ScreenShot" finished-at="2025-03-29T03:29:26 IST" duration-ms="147" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin_parallel status=FAILURE method=TakeScreeShot_for_failed_cases_Ex_02.testLogin_parallel(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestMethod04 -->
+        <test-method signature="TestMethod05()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod05" finished-at="2025-04-04T22:01:12 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterMethod_ScreenShot -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02@3cce5371]" started-at="2025-03-29T03:29:26 IST" name="closebrowser" finished-at="2025-03-29T03:29:27 IST" duration-ms="242" status="PASS">
+        </test-method> <!-- TestMethod05 -->
+        <test-method signature="TestMethod06()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod06" finished-at="2025-04-04T22:01:12 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TestMethod06 -->
+      </class> <!-- com.test.qa.Parallel.Test01 -->
+    </test> <!-- Testing_parallel_execution_test1 -->
+    <test started-at="2025-04-04T22:01:11 IST" name="Testing_parallel_execution_test2" finished-at="2025-04-04T22:01:12 IST" duration-ms="470">
+      <class name="com.test.qa.Parallel.Test02">
+        <test-method signature="TestMethod07()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:11 IST" name="TestMethod07" finished-at="2025-04-04T22:01:11 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod07 -->
+        <test-method signature="TestMethod08()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:11 IST" name="TestMethod08" finished-at="2025-04-04T22:01:11 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod08 -->
+        <test-method signature="TestMethod09()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:12 IST" name="TestMethod09" finished-at="2025-04-04T22:01:12 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod09 -->
+      </class> <!-- com.test.qa.Parallel.Test02 -->
+    </test> <!-- Testing_parallel_execution_test2 -->
+    <test started-at="2025-04-04T22:01:12 IST" name="Testing_parallel_execution_test3" finished-at="2025-04-04T22:01:12 IST" duration-ms="95">
+      <class name="com.test.qa.Parallel.Test03">
+        <test-method signature="TestMethod10()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod10" finished-at="2025-04-04T22:01:12 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod10 -->
+        <test-method signature="TestMethod11()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod11" finished-at="2025-04-04T22:01:12 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod11 -->
+        <test-method signature="TestMethod12()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod12" finished-at="2025-04-04T22:01:12 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod12 -->
+        <test-method signature="TestMethod13()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod13" finished-at="2025-04-04T22:01:12 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod13 -->
+        <test-method signature="TestMethod14()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod14" finished-at="2025-04-04T22:01:12 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod14 -->
+        <test-method signature="TestMethod15()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod15" finished-at="2025-04-04T22:01:12 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod15 -->
+      </class> <!-- com.test.qa.Parallel.Test03 -->
+    </test> <!-- Testing_parallel_execution_test3 -->
+  </suite> <!-- Prallel Execution -->
 </testng-results>
