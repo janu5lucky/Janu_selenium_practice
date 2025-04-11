@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02">
+      <class name="com.test.qa.retrylogic.TestRetryClass">
         <methods>
-          <include name="AfterMethod_ScreenShot"/>
-          <include name="closebrowser"/>
-          <include name="testLogin_parallel" invocation-numbers="1"/>
-          <include name="browserOpen"/>
+          <include name="testMayFail"/>
+          <include name="testFailed"/>
         </methods>
-      </class> <!-- com.test.qa.TakeSceenshot.TakeScreeShot_for_failed_cases_Ex_02 -->
+      </class> <!-- com.test.qa.retrylogic.TestRetryClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,7 +31,7 @@ public class parallel_with_DP {
 
 	}
 
-	@Test(dataProvider = "logindata")
+	@Test(dataProvider = "logindata", invocationCount = 4, threadPoolSize = 2)
 	public void testLogin_parallel(String Username, String Password) throws InterruptedException {
 
 		String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
@@ -67,7 +67,7 @@ public class parallel_with_DP {
 
 	}
 
-	@DataProvider(parallel = false)
+	@DataProvider(parallel = true)
 	public Object[][] logindata() {
 		Object[][] data = new Object[6][2];
 		data[0][0] = "Admin";

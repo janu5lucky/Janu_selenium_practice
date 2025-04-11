@@ -10,7 +10,7 @@ public class Test03 {
 	
 	@Test
 	public void TestMethod11() {
-		System.out.println("TestClass2 >> TestMethod11 >> "+Thread.currentThread().threadId());
+		System.out.println("TestClass3 >> TestMethod11 >> "+Thread.currentThread().threadId());
 	}
 	@Test
 	public void TestMethod12() {

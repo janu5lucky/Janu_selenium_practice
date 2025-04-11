@@ -6,7 +6,7 @@
       <class name="com.test.qa.Parallel.parallel_with_DP">
         <methods>
           <include name="closebrowser"/>
-          <include name="testLogin_parallel" invocation-numbers="1 0 2 3 4"/>
+          <include name="testLogin_parallel"/>
           <include name="browserOpen"/>
         </methods>
       </class> <!-- com.test.qa.Parallel.parallel_with_DP -->

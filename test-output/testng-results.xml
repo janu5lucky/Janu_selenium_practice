@@ -1,81 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T22:01:11 IST" name="Prallel Execution" finished-at="2025-04-04T22:01:12 IST" duration-ms="722">
+  <suite started-at="2025-04-11T22:04:29 IST" name="Suite" finished-at="2025-04-11T22:04:29 IST" duration-ms="319">
     <groups>
     </groups>
-    <test started-at="2025-04-04T22:01:11 IST" name="Testing_parallel_execution_test1" finished-at="2025-04-04T22:01:12 IST" duration-ms="579">
-      <class name="com.test.qa.Parallel.Test01">
-        <test-method signature="TestMethod01()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:11 IST" name="TestMethod01" finished-at="2025-04-04T22:01:11 IST" duration-ms="133" status="PASS">
+    <test started-at="2025-04-11T22:04:29 IST" name="Test" finished-at="2025-04-11T22:04:29 IST" duration-ms="319">
+      <class name="com.test.qa.retrylogic.TestRetryClass">
+        <test-method signature="testFailed()[pri:0, instance:com.test.qa.retrylogic.TestRetryClass@3932c79a]" started-at="2025-04-11T22:04:29 IST" name="testFailed" finished-at="2025-04-11T22:04:29 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestMethod01 -->
-        <test-method signature="TestMethod02()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:11 IST" name="TestMethod02" finished-at="2025-04-04T22:01:11 IST" duration-ms="27" status="PASS">
+        </test-method> <!-- testFailed -->
+        <test-method retried="true" signature="testMayFail()[pri:0, instance:com.test.qa.retrylogic.TestRetryClass@3932c79a]" started-at="2025-04-11T22:04:29 IST" name="testMayFail" finished-at="2025-04-11T22:04:29 IST" duration-ms="22" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.test.qa.retrylogic.TestRetryClass.testMayFail(TestRetryClass.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestMethod02 -->
-        <test-method signature="TestMethod03()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod03" finished-at="2025-04-04T22:01:12 IST" duration-ms="22" status="PASS">
+        </test-method> <!-- testMayFail -->
+        <test-method signature="testMayFail()[pri:0, instance:com.test.qa.retrylogic.TestRetryClass@3932c79a]" started-at="2025-04-11T22:04:29 IST" name="testMayFail" finished-at="2025-04-11T22:04:29 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestMethod03 -->
-        <test-method signature="TestMethod04()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod04" finished-at="2025-04-04T22:01:12 IST" duration-ms="14" status="PASS">
+        </test-method> <!-- testMayFail -->
+        <test-method signature="testPassed()[pri:0, instance:com.test.qa.retrylogic.TestRetryClass@3932c79a]" started-at="2025-04-11T22:04:29 IST" name="testPassed" finished-at="2025-04-11T22:04:29 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestMethod04 -->
-        <test-method signature="TestMethod05()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod05" finished-at="2025-04-04T22:01:12 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod05 -->
-        <test-method signature="TestMethod06()[pri:0, instance:com.test.qa.Parallel.Test01@1b1cfb87]" started-at="2025-04-04T22:01:12 IST" name="TestMethod06" finished-at="2025-04-04T22:01:12 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod06 -->
-      </class> <!-- com.test.qa.Parallel.Test01 -->
-    </test> <!-- Testing_parallel_execution_test1 -->
-    <test started-at="2025-04-04T22:01:11 IST" name="Testing_parallel_execution_test2" finished-at="2025-04-04T22:01:12 IST" duration-ms="470">
-      <class name="com.test.qa.Parallel.Test02">
-        <test-method signature="TestMethod07()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:11 IST" name="TestMethod07" finished-at="2025-04-04T22:01:11 IST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod07 -->
-        <test-method signature="TestMethod08()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:11 IST" name="TestMethod08" finished-at="2025-04-04T22:01:11 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod08 -->
-        <test-method signature="TestMethod09()[pri:0, instance:com.test.qa.Parallel.Test02@28194a50]" started-at="2025-04-04T22:01:12 IST" name="TestMethod09" finished-at="2025-04-04T22:01:12 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod09 -->
-      </class> <!-- com.test.qa.Parallel.Test02 -->
-    </test> <!-- Testing_parallel_execution_test2 -->
-    <test started-at="2025-04-04T22:01:12 IST" name="Testing_parallel_execution_test3" finished-at="2025-04-04T22:01:12 IST" duration-ms="95">
-      <class name="com.test.qa.Parallel.Test03">
-        <test-method signature="TestMethod10()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod10" finished-at="2025-04-04T22:01:12 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod10 -->
-        <test-method signature="TestMethod11()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod11" finished-at="2025-04-04T22:01:12 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod11 -->
-        <test-method signature="TestMethod12()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod12" finished-at="2025-04-04T22:01:12 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod12 -->
-        <test-method signature="TestMethod13()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod13" finished-at="2025-04-04T22:01:12 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod13 -->
-        <test-method signature="TestMethod14()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod14" finished-at="2025-04-04T22:01:12 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod14 -->
-        <test-method signature="TestMethod15()[pri:0, instance:com.test.qa.Parallel.Test03@4b8729ff]" started-at="2025-04-04T22:01:12 IST" name="TestMethod15" finished-at="2025-04-04T22:01:12 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod15 -->
-      </class> <!-- com.test.qa.Parallel.Test03 -->
-    </test> <!-- Testing_parallel_execution_test3 -->
-  </suite> <!-- Prallel Execution -->
+        </test-method> <!-- testPassed -->
+      </class> <!-- com.test.qa.retrylogic.TestRetryClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
