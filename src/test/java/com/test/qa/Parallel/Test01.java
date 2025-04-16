@@ -7,12 +7,12 @@ public class Test01 {
 	
 	@Test
 	public void TestMethod01() {
-		System.out.println("TestClass1 >> TestMethod1 >> "+Thread.currentThread().getId());
+		System.out.println("TestClass1 >> TestMethod1 >> "+Thread.currentThread().threadId());
 	}
 	
 	@Test
 	public void TestMethod02() {
-		System.out.println("TestClass1 >> TestMethod2 >> "+Thread.currentThread().getId());
+		System.out.println("TestClass1 >> TestMethod2 >> "+Thread.currentThread().threadId());
 	}
 	@Test
 	public void TestMethod03() {

@@ -40,7 +40,16 @@ WebDriver driver;
 	--disable-gpu: Disables GPU acceleration. 
 	--disable-extensions: Disables browser extensions. 
 	--disable-infobars: Disables browser infobars. 
-	--disable-popup-blocking: Disables popup blocking. */
+	--disable-popup-blocking: Disables popup blocking.
+	
+	 *
+	 *
+	 *ChromeOptions options = new ChromeOptions();
+Map<String, Object> prefs = new HashMap<String, Object>();
+prefs.put("download.default_directory", "/directory/path");
+options.setExperimentalOption("prefs", prefs);
+
+*/
 	
 	
 	}

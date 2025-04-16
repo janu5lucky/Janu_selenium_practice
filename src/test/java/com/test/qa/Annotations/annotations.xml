@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Annotations Testing">
+	<test name="Annotaions testing test">
+		<classes>
+			<class name="com.test.qa.Annotations.AnnotationsTestingClass1">
+				<methods>
+					<include name="Test1" />
+					<include name="Test2" />
+
+				</methods>
+			</class>
+			<class name="com.test.qa.Annotations.AnnotationsTestingClass2">
+				<methods>
+					<include name="Test3" />
+					<include name="Test4" />
+
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+	<test name="Annotaions testing test2">
+		<classes>
+			<class name="com.test.qa.Annotations.AnnotationsTestingClass1">
+				<methods>
+					<include name="Test1" />
+					<include name="Test2" />
+
+				</methods>
+			</class>
+			<class name="com.test.qa.Annotations.AnnotationsTestingClass2">
+				<methods>
+					<include name="Test3" />
+					<include name="Test4" />
+
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
