@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.dropdown.Handling_DropDown_Ex_002">
+      <class name="com.test.qa.JavaScriptExecutor.movetoelementandscrollup">
         <methods>
-          <include name="verify_dropdown_select_visiblevalue"/>
+          <include name="TC2_MovetoElement"/>
         </methods>
-      </class> <!-- com.test.qa.dropdown.Handling_DropDown_Ex_002 -->
+      </class> <!-- com.test.qa.JavaScriptExecutor.movetoelementandscrollup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

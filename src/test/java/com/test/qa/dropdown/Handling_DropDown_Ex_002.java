@@ -1,6 +1,7 @@
 package com.test.qa.dropdown;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,7 @@ import org.testng.annotations.Test;
 public class Handling_DropDown_Ex_002 {
 
 @Test
-public void verify_dropdown_select_visibility() throws Exception {
+public void verify_dropdown_select_visibilityText() throws Exception {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
@@ -69,7 +70,7 @@ public void verify_dropdown_select_index() throws Exception {
 
 
 @Test
-public void verify_dropdown_select_visiblevalue() throws Exception {
+public void verify_dropdown_select_visibleValue() throws Exception {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
@@ -82,7 +83,7 @@ public void verify_dropdown_select_visiblevalue() throws Exception {
 		Actions act = new Actions(driver);
 		act.sendKeys(Keys.PAGE_DOWN).perform();
 		
-		String country = "China";
+		String country = "china";
 		// List<WebElement> countrylist = driver.findElements(By.cssSelector("select#country"));
 		Select countries = new Select(driver.findElement(By.cssSelector("select#country")));
  	
@@ -93,6 +94,44 @@ public void verify_dropdown_select_visiblevalue() throws Exception {
 		
 		driver.quit();
 	}
+
+
+@Test
+public void verify_dropdown_select_GetOptions() throws Exception {
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		
+		Thread.sleep(3000);
+
+		Actions act = new Actions(driver);
+		act.sendKeys(Keys.PAGE_DOWN).perform();
+		
+		String country = "china";
+		// List<WebElement> countrylist = driver.findElements(By.cssSelector("select#country"));
+		Select countries = new Select(driver.findElement(By.cssSelector("select#country")));
+		List<WebElement> countrylist = countries.getOptions();
+		ArrayList<String> countryget = new ArrayList<>();
+		
+		for(WebElement Country : countrylist)
+		{
+			String country1 = Country.getText();
+			countryget.add(country1);
+		}
+		
+		System.out.println(countryget);
+
+		countries.selectByValue(country);
+		Thread.sleep(3000);
+
+		System.out.println("country selected : Value China ");
+		
+		driver.quit();
+	}
+
 
 
 
