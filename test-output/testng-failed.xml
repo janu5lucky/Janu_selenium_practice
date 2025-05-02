@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.JavaScriptExecutor.movetoelementandscrollup">
+      <class name="com.test.qa.HYRTutorials.WindowHandles_Ex_01">
         <methods>
-          <include name="TC2_MovetoElement"/>
+          <include name="WindowHandle"/>
         </methods>
-      </class> <!-- com.test.qa.JavaScriptExecutor.movetoelementandscrollup -->
+      </class> <!-- com.test.qa.HYRTutorials.WindowHandles_Ex_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
