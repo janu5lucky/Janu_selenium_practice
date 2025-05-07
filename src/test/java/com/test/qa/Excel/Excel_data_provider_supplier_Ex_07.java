@@ -36,7 +36,7 @@ public class Excel_data_provider_supplier_Ex_07 {
 
 				DataFormatter df = new DataFormatter();
 				data[i][j] = df.formatCellValue(sheet.getRow(i+1).getCell(j));
-				//System.out.println(Arrays.toString(data));
+				System.out.println(Arrays.deepToString(data));
 
 			}
 			
