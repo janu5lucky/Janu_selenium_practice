@@ -34,7 +34,8 @@ public class DatePicker_Ex_03 {
 		String actualmaonthname = Datepicker_monthname.getText();
 		Assert.assertEquals(actualmaonthname, "May");
 		
-		
+		//div[@data-testid='undefined-month-May-2025']//div[text()=15]
+		//div[@data-testid='undefined-month-June-2025']//div[text()=15]
 		Thread.sleep(3000);
 		driver.close();
 		
