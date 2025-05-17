@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.qa.HYRTutorials.WindowHandles_Ex_01">
+      <class name="com.letcode.qa.flipkart">
         <methods>
-          <include name="WindowHandle"/>
+          <include name="launchbrowser"/>
+          <include name="searchiphoneamdgetprice"/>
+          <include name="closebrowser"/>
         </methods>
-      </class> <!-- com.test.qa.HYRTutorials.WindowHandles_Ex_01 -->
+      </class> <!-- com.letcode.qa.flipkart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

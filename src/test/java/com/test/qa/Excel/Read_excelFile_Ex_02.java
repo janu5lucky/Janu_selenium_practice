@@ -89,7 +89,7 @@ public class Read_excelFile_Ex_02 {
 			case STRING:
 				
 				return String.valueOf(cell.getStringCellValue());
-				
+	 			
 			default:
 				return String.valueOf(cell.getStringCellValue());
 

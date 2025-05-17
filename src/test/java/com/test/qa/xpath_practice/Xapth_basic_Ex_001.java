@@ -137,9 +137,8 @@ public class Xapth_basic_Ex_001 {
 
 	public static void chapter6() throws Exception {
 
-		// Xpath Using Conditions- AND , OR , NOT
+		// Xpath Using indexes
 
-		// div[@id='tnb-google-search-mobile-show']
 
 		driver.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
 		Actions act = new Actions(driver);

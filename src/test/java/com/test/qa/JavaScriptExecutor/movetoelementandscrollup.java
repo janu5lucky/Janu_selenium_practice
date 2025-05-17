@@ -56,9 +56,9 @@ public class movetoelementandscrollup {
 		ewait.until(ExpectedConditions.visibilityOf(flink));
 		jse.executeScript("arguments[0].scrollIntoView(true);", flink);
 		Thread.sleep(3000);
-		jse.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", flink);
+		jse.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow');", flink);
 		Thread.sleep(3000);
-
+// scroll up 
 		jse.executeScript("window.scrollBy(0,-350)","");
 		Thread.sleep(5000);
 

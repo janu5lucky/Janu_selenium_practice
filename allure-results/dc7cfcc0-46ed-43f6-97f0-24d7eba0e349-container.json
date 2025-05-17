@@ -1,0 +1,1 @@
+{"uuid":"dc7cfcc0-46ed-43f6-97f0-24d7eba0e349","name":"com.letcode.qa.flipkart","children":["fa70219b-0a8a-467e-a22e-394841c3c600"],"befores":[],"afters":[{"name":"closebrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1747131995432,"stop":1747131995762}],"start":1747131988685,"stop":1747131995792}

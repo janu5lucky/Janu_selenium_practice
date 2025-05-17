@@ -32,3 +32,4 @@ public class TakeScreenShot_Ex_01 {
 	}
 
 }
+ 

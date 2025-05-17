@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T20:57:11 IST" name="Default suite" finished-at="2025-05-06T20:57:50 IST" duration-ms="39317">
+  <suite started-at="2025-05-15T23:19:27 IST" name="Default suite" finished-at="2025-05-15T23:20:01 IST" duration-ms="34790">
     <groups>
     </groups>
-    <test started-at="2025-05-06T20:57:11 IST" name="Default test" finished-at="2025-05-06T20:57:50 IST" duration-ms="39317">
-      <class name="com.test.qa.Dataprovider.Datafrom_excelclass_Ex_07">
-        <test-method signature="testdatafrom_excel_DPclass(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.Dataprovider.Datafrom_excelclass_Ex_07@6f43c82]" started-at="2025-05-06T20:57:13 IST" name="testdatafrom_excel_DPclass" data-provider="Logindata" finished-at="2025-05-06T20:57:26 IST" duration-ms="12701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin222]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-05-15T23:19:27 IST" name="Default test" finished-at="2025-05-15T23:20:01 IST" duration-ms="34790">
+      <class name="com.test.qa.JavaScriptExecutor.movetoelementandscrollup">
+        <test-method signature="TC2_MovetoElement()[pri:0, instance:com.test.qa.JavaScriptExecutor.movetoelementandscrollup@20b2475a]" started-at="2025-05-15T23:19:27 IST" name="TC2_MovetoElement" finished-at="2025-05-15T23:19:48 IST" duration-ms="21122" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdatafrom_excel_DPclass -->
-        <test-method signature="testdatafrom_excel_DPclass(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.Dataprovider.Datafrom_excelclass_Ex_07@6f43c82]" started-at="2025-05-06T20:57:26 IST" name="testdatafrom_excel_DPclass" data-provider="Logindata" finished-at="2025-05-06T20:57:38 IST" duration-ms="12139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TC2_MovetoElement -->
+        <test-method signature="TC3_MovetoPageEnd()[pri:0, instance:com.test.qa.JavaScriptExecutor.movetoelementandscrollup@20b2475a]" started-at="2025-05-15T23:19:48 IST" name="TC3_MovetoPageEnd" finished-at="2025-05-15T23:20:01 IST" duration-ms="13397" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdatafrom_excel_DPclass -->
-        <test-method signature="testdatafrom_excel_DPclass(java.lang.String,java.lang.String)[pri:0, instance:com.test.qa.Dataprovider.Datafrom_excelclass_Ex_07@6f43c82]" started-at="2025-05-06T20:57:38 IST" name="testdatafrom_excel_DPclass" data-provider="Logindata" finished-at="2025-05-06T20:57:50 IST" duration-ms="12655" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TC3_MovetoPageEnd -->
+        <test-method signature="TC4_HandleAlert()[pri:0, instance:com.test.qa.JavaScriptExecutor.movetoelementandscrollup@20b2475a]" started-at="2025-05-15T23:20:01 IST" name="TC4_HandleAlert" finished-at="2025-05-15T23:20:01 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdatafrom_excel_DPclass -->
-      </class> <!-- com.test.qa.Dataprovider.Datafrom_excelclass_Ex_07 -->
+        </test-method> <!-- TC4_HandleAlert -->
+      </class> <!-- com.test.qa.JavaScriptExecutor.movetoelementandscrollup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
